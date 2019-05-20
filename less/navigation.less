@@ -15,11 +15,17 @@
 .nav-logo {
     font-size:4rem;
     padding-bottom: 19px;
+    @media @phone {
+        font-size: 3.8rem;
+        padding-bottom: 15px;
+    }
 }
 
 .nav-link-container{
     width: 375px;
     .flex(@justify:space-between);
+    @media @phone {
+        width: 355px;
 }
 
 .nav-link {
@@ -27,3 +33,4 @@
     font-size:1.6rem;
     padding-bottom: 12px;
 }
+}  
