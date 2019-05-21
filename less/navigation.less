@@ -1,1 +1,36 @@
 // Navigation code here
+.nav-container {
+  width:100%;
+  background-color: @nav-bg;
+  border: 1px double @nav-border
+}
+ 
+.nav {    
+    max-width: 800px;
+    margin: 0 auto;
+    .flex();
+    flex-direction: column;
+}
+
+.nav-logo {
+    font-size:4rem;
+    padding-bottom: 19px;
+    @media @phone {
+        font-size: 3.8rem;
+        padding-bottom: 15px;
+    }
+}
+
+.nav-link-container{
+    width: 375px;
+    .flex(@justify:space-between);
+    @media @phone {
+        width: 355px;
+}
+
+.nav-link {
+    .normalize(black);
+    font-size:1.6rem;
+    padding-bottom: 12px;
+}
+}  
